@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/TRASH_JIRA.iml" filepath="$PROJECT_DIR$/.idea/TRASH_JIRA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TRASH_JIRA.iml" filepath="$PROJECT_DIR$/TRASH_JIRA.iml" />
     </modules>
   </component>
 </project>
