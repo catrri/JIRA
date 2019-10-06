@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
 import static org.testng.Assert.assertTrue;
 
 public class CreateIssue {
@@ -12,7 +13,7 @@ public class CreateIssue {
 
     @BeforeTest
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "/Users/User/IdeaProjects/LoginToJira/Jira1/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/Users/User/IdeaProjects/TRASH_JIRA/chromedriver.exe");
         // Create a new instance of the Chrome driver
         this.driver = new ChromeDriver();
     }
@@ -55,13 +56,11 @@ public class CreateIssue {
         assertTrue(this.driver.findElement(createSuccsess).isDisplayed());
         Thread.sleep(5000);
 
-
     }
 
     @AfterTest
     public void tearDown() {
         this.driver.quit();
     }
-
 
 }

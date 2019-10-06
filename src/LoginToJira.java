@@ -13,7 +13,7 @@ public class LoginToJira {
 
     @BeforeTest
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "/Users/User/IdeaProjects/LoginToJira/Jira1/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/Users/User/IdeaProjects/TRASH_JIRA/chromedriver.exe");
         // Create a new instance of the Chrome driver
         this.driver = new ChromeDriver();
     }
@@ -51,7 +51,7 @@ public class LoginToJira {
         this.driver.findElement(passwordInput).sendKeys(password);
         this.driver.findElement(enterButton).click();
 
-        Thread.sleep(2000);
+        Thread.sleep(4000);
         Assert.assertEquals(driver.getCurrentUrl(), "https://jira.hillel.it/secure/Dashboard.jspa");
     }
 
