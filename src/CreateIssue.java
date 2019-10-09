@@ -1,9 +1,13 @@
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.assertTrue;
 
@@ -16,6 +20,8 @@ public class CreateIssue {
         System.setProperty("webdriver.chrome.driver", "/Users/User/IdeaProjects/TRASH_JIRA/chromedriver.exe");
         // Create a new instance of the Chrome driver
         this.driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
     }
 
     By userNameInput = By.xpath("//*[@id='login-form-username']");
@@ -38,23 +44,31 @@ public class CreateIssue {
         this.driver.findElement(userNameInput).sendKeys(userName);
         this.driver.findElement(passwordInput).sendKeys(password);
         this.driver.findElement(enterButton).click();
-        Thread.sleep(3000);
+        // Thread.sleep(3000);
+        WebDriverWait wait = new WebDriverWait(driver, 5);
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='create_link']")));
+
 
         Assert.assertEquals(driver.getCurrentUrl(), "https://jira.hillel.it/secure/Dashboard.jspa");
 
         this.driver.findElement(createButton).click();
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
+        WebElement element1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='summary']")));
         // this.driver.findElement(projectInput);
         // this.driver.findElement(issueTypeInput);
         this.driver.findElement(summaryInput).sendKeys("Test Create Issue");
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
+        WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='description']")));
         this.driver.findElement(By.xpath("//*[@id=\"description-wiki-edit\"]")).click();
         this.driver.findElement(descriptionInput).sendKeys("Description of my Test Issue");
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
+        WebElement element3 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='create-issue-submit']")));
         this.driver.findElement(createIssue).click();
 
         assertTrue(this.driver.findElement(createSuccsess).isDisplayed());
-        Thread.sleep(5000);
+        //Thread.sleep(5000);
+        WebElement element4 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='create-issue-submit']")));
+
 
     }
 
@@ -62,5 +76,4 @@ public class CreateIssue {
     public void tearDown() {
         this.driver.quit();
     }
-
 }
