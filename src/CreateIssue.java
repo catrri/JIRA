@@ -11,18 +11,18 @@ import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.assertTrue;
 
-public class CreateIssue {
+public class CreateIssue extends BaseTest{
 
-    WebDriver driver;
+//    WebDriver driver;
 
-    @BeforeTest
-    public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "/Users/User/IdeaProjects/TRASH_JIRA/chromedriver.exe");
-        // Create a new instance of the Chrome driver
-        this.driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-    }
+//    @BeforeTest
+//    public void setUp() {
+//        System.setProperty("webdriver.chrome.driver", "/Users/User/IdeaProjects/TRASH_JIRA/chromedriver.exe");
+//        // Create a new instance of the Chrome driver
+//        this.driver = new ChromeDriver();
+//        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//
+//    }
 
     By userNameInput = By.xpath("//*[@id='login-form-username']");
     By passwordInput = By.xpath("//*[@id='login-form-password']");
@@ -71,8 +71,10 @@ public class CreateIssue {
 
     }
 
-    @AfterTest
-    public void tearDown() {
-        this.driver.quit();
-    }
+//    @AfterTest
+//    public void tearDown(
+//
+//    ) {
+//        this.driver.quit();
+//    }
 }
