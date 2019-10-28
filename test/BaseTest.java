@@ -1,7 +1,8 @@
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 import java.util.concurrent.TimeUnit;
 
@@ -10,14 +11,14 @@ public class BaseTest {
 
     WebDriver driver;
 
-    @BeforeTest
-    public void setUP(){
-        System.setProperty("webdriver.chrome.driver", "/Users/User/IdeaProjects/TRASH_JIRA/chromedriver.exe");
-        this.driver = new ChromeDriver();
+    @BeforeMethod
+    public void setUP() {
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
-    @AfterTest
+    @AfterMethod
     public void tearDown() {
         this.driver.quit();
 
