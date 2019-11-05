@@ -4,12 +4,12 @@
         <listener class-name="utils.TestListener"/>
     </listeners>
     <test name="Issue">
-        <!-- <groups>
+        <groups>
             <run>
                 <include name="Regression"/>
                 <exclude name="SKIP"/>
             </run>
-        </groups> !-->
+        </groups>
         <classes>
             <class name="JIRATest"/>
         </classes>

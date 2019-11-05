@@ -1,0 +1,60 @@
+{
+  "faaf014b466320cfe28abb1c56138589" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e8f3eea6d65812eb",
+      "status" : "broken",
+      "statusDetails" : "session not created: This version of ChromeDriver only supports Chrome version 79\nBuild info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T15:15:08.936Z'\nSystem info: host: 'COMPNAME', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x01449F93+1548179]\n\tOrdinal0 [0x013CDC51+1039441]\n\tOrdinal0 [0x0134E495+517269]\n\tOrdinal0 [0x012DFD34+64820]\n\tOrdinal0 [0x012DC61E+50718]\n\tOrdinal0 [0x012FB797+178071]\n\tOrdinal0 [0x012FB59D+177565]\n\tOrdinal0 [0x012F95FB+169467]\n\tOrdinal0 [0x012E160A+71178]\n\tOrdinal0 [0x012E2690+75408]\n\tOrdinal0 [0x012E2629+75305]\n\tOrdinal0 [0x013E7047+1142855]\n\tGetHandleVerifier [0x014E2996+507766]\n\tGetHandleVerifier [0x014E26B4+507028]\n\tGetHandleVerifier [0x014E9D97+537463]\n\tGetHandleVerifier [0x014E3252+510002]\n\tOrdinal0 [0x013DF12C+1110316]\n\tOrdinal0 [0x013E921B+1151515]\n\tOrdinal0 [0x013E9383+1151875]\n\tOrdinal0 [0x013E8285+1147525]\n\tBaseThreadInitThunk [0x74940179+25]\n\tRtlGetAppContainerNamedObjectPath [0x772F662D+237]\n\tRtlGetAppContainerNamedObjectPath [0x772F65FD+189]\n",
+      "time" : {
+        "start" : 1572472177702,
+        "stop" : 1572472177707,
+        "duration" : 5
+      }
+    } ]
+  },
+  "6b75dc2ff2a2b074e59fc37f2eb56d14" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "613baf1ffa2d4eeb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572473145841,
+        "stop" : 1572473156417,
+        "duration" : 10576
+      }
+    } ]
+  },
+  "6f256843d3f24e4aa6490d92cdd64d1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "888cd367ba23c142",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572473160642,
+        "stop" : 1572473165295,
+        "duration" : 4653
+      }
+    } ]
+  }
+}

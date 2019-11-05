@@ -24,13 +24,8 @@ public class CreateIssuePage {
         driver.findElement(createButton).click();
     }
 
-//    public void enterProject(String project) {
-//        driver.findElement(projectInput).sendKeys(project);
-//    }
-//
-//    public void enterIssueType(String issue) {
-//        driver.findElement(issueTypeInput).sendKeys(issue);
-//    }
+//    public void enterProject(String project) {driver.findElement(projectInput).sendKeys(project); }
+//    public void enterIssueType(String issue) {driver.findElement(issueTypeInput).sendKeys(issue);}
 
     public void enterSummary(String summary) {
         driver.findElement(summaryInput).sendKeys(summary);

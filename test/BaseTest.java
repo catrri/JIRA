@@ -11,14 +11,14 @@ public class BaseTest {
 
     WebDriver driver;
 
-    @BeforeMethod
+    @BeforeMethod(groups = "Regression")
     public void setUP() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
-    @AfterMethod
+    @AfterMethod(groups = "Regression")
     public void tearDown() {
         this.driver.quit();
 

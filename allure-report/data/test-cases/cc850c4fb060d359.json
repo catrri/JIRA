@@ -1,0 +1,94 @@
+{
+  "uid" : "cc850c4fb060d359",
+  "name" : "CreateIssueTest",
+  "fullName" : "JIRATest.CreateIssueTest",
+  "historyId" : "6b75dc2ff2a2b074e59fc37f2eb56d14",
+  "time" : {
+    "start" : 1572472970187,
+    "stop" : 1572472981301,
+    "duration" : 11114
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUP",
+    "time" : {
+      "start" : 1572472962684,
+      "stop" : 1572472969787,
+      "duration" : 7103
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1572472981321,
+      "stop" : 1572472982512,
+      "duration" : 1191
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "JIRATest"
+  }, {
+    "name" : "testClass",
+    "value" : "JIRATest"
+  }, {
+    "name" : "testMethod",
+    "value" : "CreateIssueTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "TRASH_JIRA"
+  }, {
+    "name" : "subSuite",
+    "value" : "JIRATest"
+  }, {
+    "name" : "host",
+    "value" : "COMPNAME"
+  }, {
+    "name" : "thread",
+    "value" : "12900@COMPNAME.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Issue"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cc850c4fb060d359.json",
+  "parameterValues" : [ ]
+}

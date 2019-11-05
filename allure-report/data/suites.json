@@ -1,0 +1,53 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Default Suite",
+    "children" : [ {
+      "name" : "TRASH_JIRA",
+      "children" : [ {
+        "name" : "JIRATest",
+        "children" : [ {
+          "name" : "setUP",
+          "uid" : "e8f3eea6d65812eb",
+          "parentUid" : "44ad5741bc050069d8c279fc1f906f0d",
+          "status" : "broken",
+          "time" : {
+            "start" : 1572472177702,
+            "stop" : 1572472177707,
+            "duration" : 5
+          },
+          "flaky" : true,
+          "parameters" : [ ]
+        }, {
+          "name" : "CreateIssueTest",
+          "uid" : "613baf1ffa2d4eeb",
+          "parentUid" : "44ad5741bc050069d8c279fc1f906f0d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1572473145841,
+            "stop" : 1572473156417,
+            "duration" : 10576
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "LoginTest",
+          "uid" : "888cd367ba23c142",
+          "parentUid" : "44ad5741bc050069d8c279fc1f906f0d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1572473160642,
+            "stop" : 1572473165295,
+            "duration" : 4653
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "44ad5741bc050069d8c279fc1f906f0d"
+      } ],
+      "uid" : "5389f6abb2c6c08ca554f282c7be7fd6"
+    } ],
+    "uid" : "8399274b4bb69ec8699907dd6ef7de4e"
+  } ]
+}

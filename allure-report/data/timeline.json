@@ -1,0 +1,53 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "COMPNAME",
+    "children" : [ {
+      "name" : "12540@COMPNAME.main(1)",
+      "children" : [ {
+        "name" : "LoginTest",
+        "uid" : "888cd367ba23c142",
+        "parentUid" : "738357d1c5a47835c654993de29a662b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572473160642,
+          "stop" : 1572473165295,
+          "duration" : 4653
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "CreateIssueTest",
+        "uid" : "613baf1ffa2d4eeb",
+        "parentUid" : "738357d1c5a47835c654993de29a662b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572473145841,
+          "stop" : 1572473156417,
+          "duration" : 10576
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "738357d1c5a47835c654993de29a662b"
+    }, {
+      "name" : "12252@COMPNAME.main(1)",
+      "children" : [ {
+        "name" : "setUP",
+        "uid" : "e8f3eea6d65812eb",
+        "parentUid" : "5d10821829c9992b263c176ed81197e8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1572472177702,
+          "stop" : 1572472177707,
+          "duration" : 5
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5d10821829c9992b263c176ed81197e8"
+    } ],
+    "uid" : "c45628666cb4d257a7f6f8f9f0c3d31d"
+  } ]
+}

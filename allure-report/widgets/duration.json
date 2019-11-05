@@ -1,0 +1,31 @@
+[ {
+  "uid" : "888cd367ba23c142",
+  "name" : "LoginTest",
+  "time" : {
+    "start" : 1572473160642,
+    "stop" : 1572473165295,
+    "duration" : 4653
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "613baf1ffa2d4eeb",
+  "name" : "CreateIssueTest",
+  "time" : {
+    "start" : 1572473145841,
+    "stop" : 1572473156417,
+    "duration" : 10576
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e8f3eea6d65812eb",
+  "name" : "setUP",
+  "time" : {
+    "start" : 1572472177702,
+    "stop" : 1572472177707,
+    "duration" : 5
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
