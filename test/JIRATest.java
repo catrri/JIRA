@@ -1,5 +1,6 @@
 import io.qameta.allure.Feature;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.CreateIssuePage;
 import pages.LoginPage;
@@ -17,6 +18,7 @@ public class JIRATest extends BaseTest {
         Assert.assertEquals(driver.getCurrentUrl(), "https://jira.hillel.it/secure/Dashboard.jspa");
     }
 
+
     @Feature("Issue")
     @Test(groups = {"Regression"})
     public void CreateIssueTest() throws InterruptedException {
@@ -32,4 +34,21 @@ public class JIRATest extends BaseTest {
         assertTrue(createIssuePage.createSuccsess());
     }
 
+
+    @Feature("UnsuccessfulLogin")
+    @Test(groups = {"Regression"}, dataProvider = "data-provider")
+    public void UnsuccessfulLoginTest(String name, String wrongpassword) {
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.navigate();
+        loginPage.wrongloginToJira(name, wrongpassword);
+        assertTrue(loginPage.wrongClickLogin());
+    }
+
+    @DataProvider(name = "data-provider")
+    public Object[][] dataProviderData() {
+        return new Object[][]{
+                {"Ekaterina_Voronkova", "123456789"},
+                {"Ekaterina_Voronkova", "wrongpass"}
+        };
+    }
 }
