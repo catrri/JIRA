@@ -40,7 +40,7 @@ public class JIRATest extends BaseTest {
     public void UnsuccessfulLoginTest(String name, String wrongpassword) {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.navigate();
-        loginPage.wrongloginToJira(name, wrongpassword);
+        loginPage.loginToJira(name, wrongpassword);
         assertTrue(loginPage.wrongClickLogin());
     }
 

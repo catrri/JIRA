@@ -43,9 +43,4 @@ public class LoginPage {
         clickLogin();
     }
 
-    public void wrongloginToJira(String name, String wrongpassword) {
-        enterUserName(name);
-        enterPassword(wrongpassword);
-        clickLogin();
-    }
-}
+   }
