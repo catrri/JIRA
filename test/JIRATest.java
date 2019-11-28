@@ -41,7 +41,7 @@ public class JIRATest extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.navigate();
         loginPage.loginToJira(name, wrongpassword);
-        assertTrue(loginPage.wrongClickLogin());
+        assertTrue(loginPage.isErrorMessageDisplayed());
     }
 
     @DataProvider(name = "data-provider")

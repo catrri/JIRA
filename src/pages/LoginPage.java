@@ -35,7 +35,7 @@ public class LoginPage {
         driver.findElement(enterButton).click();
     }
 
-    public boolean wrongClickLogin() {return driver.findElement(wrongPassword).isDisplayed();}
+    public boolean  isErrorMessageDisplayed() {return driver.findElement(wrongPassword).isDisplayed();}
 
     public void loginToJira(String name, String password) {
         enterUserName(name);
