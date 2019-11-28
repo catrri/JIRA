@@ -60,4 +60,4 @@ Allure-testng dependency
 2. В тесты добавить @Feature
 3. Установить Allure CLI. Прописать переменные Allure и Path в среде  https://docs.qameta.io/allure/#_installing_a_commandline 
 4. Запустить тесты mvn clean test
-5. Выполнить в корне проекта консольную команду "allure generate --clean"
+5. Выполнить в корне проекта консольную команду "allure generate --clean"  
