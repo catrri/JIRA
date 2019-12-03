@@ -10,7 +10,6 @@
 Подключение Allure:
 
 1. Обновить pom.xml
-
 Allure-testng dependency
      <dependency>
          <groupId>io.qameta.allure</groupId>
