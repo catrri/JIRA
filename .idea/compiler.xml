@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="TRASH_JIRA" />
+        <module name="api-automation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="TRASH_JIRA" target="1.8" />
+      <module name="api-automation" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
